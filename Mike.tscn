@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxrrs6k5u31j6"]
+
+[ext_resource type="Script" path="res://main_script_scene.gd" id="1_ehrqr"]
+
+[node name="trollino_contento" type="Node2D"]
+script = ExtResource("1_ehrqr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -202.0
+offset_top = -117.0
+offset_right = 1916.0
+offset_bottom = 1035.0
+color = Color(0.121569, 0.117647, 0.101961, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -9.0
+offset_top = -1.0
+offset_right = 1164.0
+offset_bottom = 91.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 203.0
+offset_top = 169.0
+offset_right = 340.0
+offset_bottom = 291.0
+text = "."
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 375.0
+offset_top = 166.0
+offset_right = 513.0
+offset_bottom = 294.0
+text = "."
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 542.0
+offset_top = 167.25
+offset_right = 680.0
+offset_bottom = 295.25
+text = "."
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 67.0
+offset_top = 27.0
+offset_right = 223.0
+offset_bottom = 70.0
+text = "TROLLINO"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 419.0
+offset_top = 27.0
+offset_right = 575.0
+offset_bottom = 70.0
+text = "TIMBA
+"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 247.0
+offset_top = 26.0
+offset_right = 403.0
+offset_bottom = 69.0
+text = "MIKE
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed_TIMBA"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed_MIKE"]
